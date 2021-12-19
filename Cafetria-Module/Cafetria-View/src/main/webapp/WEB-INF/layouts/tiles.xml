@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+   
+    <!--definaition for login and signup forms--> 
+    <definition name="loginTemplate" templateExpression="/WEB-INF/layouts/loginTemplate.jsp">
+        <put-attribute name="style" value="/WEB-INF/layouts/style/loginStyle.jsp" />
+        <put-attribute name="script" value="/WEB-INF/layouts/script/loginScript.jsp" />
+    </definition>
+    
+    <!--defination for main template of admin panel--> 
+    <definition name="mainTemplate" templateExpression="/WEB-INF/layouts/mainTemplate.jsp">
+        <put-attribute name="controllSilder" value="/WEB-INF/layouts/sidemenu/controlSlider.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layouts/footer/footer.jsp" />
+        <put-attribute name="slide" value="/WEB-INF/layouts/sidemenu/slide.jsp" />
+        <put-attribute name="header" value="/WEB-INF/layouts/header/header.jsp" />
+        <put-attribute name="style" value="/WEB-INF/layouts/style/defaultstyle.jsp" />
+        <put-attribute name="script" value="/WEB-INF/layouts/script/defaultscript.jsp" />
+    </definition>
+    <definition name="formTemplate" templateExpression="/WEB-INF/layouts/formTemplate.jsp">
+        <put-attribute name="controllSilder" value="/WEB-INF/layouts/sidemenu/controlSlider.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layouts/footer/footer.jsp" />
+        <put-attribute name="slide" value="/WEB-INF/layouts/sidemenu/slide.jsp" />
+        <put-attribute name="header" value="/WEB-INF/layouts/header/header.jsp" />
+        <put-attribute name="style" value="/WEB-INF/layouts/style/defaultstyle.jsp" />
+        <put-attribute name="script" value="/WEB-INF/layouts/script/defaultscript.jsp" />
+    </definition>
+    
+    <definition name="orderTemplate" templateExpression="/WEB-INF/layouts/orderTemplate.jsp">
+        <put-attribute name="controllSilder" value="/WEB-INF/layouts/sidemenu/controlSlider.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layouts/footer/footer.jsp" />
+        <put-attribute name="slide" value="/WEB-INF/layouts/sidemenu/slide.jsp" />
+        <put-attribute name="header" value="/WEB-INF/layouts/header/header.jsp" />
+        <put-attribute name="style" value="/WEB-INF/layouts/style/defaultstyle.jsp" />
+        <put-attribute name="script" value="/WEB-INF/layouts/script/defaultscript.jsp" />
+    </definition>
+    
+    <definition name="abstractTemplate" templateExpression="/WEB-INF/layouts/abstractTemplate.jsp">
+        <put-attribute name="footer" value="/WEB-INF/layouts/footer/clientFooter.jsp" />
+        <put-attribute name="header" value="/WEB-INF/layouts/header/clinetHeader.jsp" />
+        <put-attribute name="style" value="/WEB-INF/layouts/style/clientStyle.jsp" />
+        <put-attribute name="script" value="/WEB-INF/layouts/script/clinetScript.jsp" />
+    </definition>
+    
+    <definition name="mainViewClientTemplate" templateExpression="/WEB-INF/layouts/mainViewClientTemplate.jsp">
+        <put-attribute name="footer" value="/WEB-INF/layouts/footer/clientFooter.jsp" />
+        <put-attribute name="header" value="/WEB-INF/layouts/header/clinetHeader.jsp" />
+        <put-list-attribute name="style">
+            <add-attribute value="/WEB-INF/layouts/style/clientStyle.jsp" />
+            <add-attribute value="/WEB-INF/layouts/style/mainViewClientStyle.jsp" />
+        </put-list-attribute>
+        <put-list-attribute name="script">
+            <add-attribute value="/WEB-INF/layouts/script/clinetScript.jsp" />
+            <add-attribute value="/WEB-INF/layouts/script/mainViewClientScript.jsp" />
+        </put-list-attribute>
+    </definition>
+    
+    
+    <definition name="orderHistoryTemplate" templateExpression="/WEB-INF/layouts/orderHistoryTemplate.jsp">
+        <put-attribute name="footer" value="/WEB-INF/layouts/footer/clientFooter.jsp" />
+        <put-attribute name="header" value="/WEB-INF/layouts/header/clinetHeader.jsp" />
+        <put-list-attribute name="style">
+            <add-attribute value="/WEB-INF/layouts/style/defaultstyle.jsp" />
+            <add-attribute value="/WEB-INF/layouts/style/clientStyle.jsp" />      
+        </put-list-attribute>
+        <put-list-attribute name="script">
+            <add-attribute value="/WEB-INF/layouts/script/clinetScript.jsp" />
+            <add-attribute value="/WEB-INF/layouts/script/defaultscript.jsp" />
+        </put-list-attribute>
+    </definition>
+    
+    <definition name="mainTemplateWithoutLocal" templateExpression="/WEB-INF/layouts/mainTemplateWithoutLocal.jsp">
+        <put-attribute name="controllSilder" value="/WEB-INF/layouts/sidemenu/controlSlider.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layouts/footer/footer.jsp" />
+        <put-attribute name="slide" value="/WEB-INF/layouts/sidemenu/slide.jsp" />
+        <put-attribute name="header" value="/WEB-INF/layouts/header/header.jsp" />
+        <put-attribute name="style" value="/WEB-INF/layouts/style/defaultstyle.jsp" />
+        <put-attribute name="script" value="/WEB-INF/layouts/script/liteScript.jsp" />
+    </definition>
+   
+    <!--defination for main template of admin panel--> 
+    <definition name="errorTemplate" templateExpression="/WEB-INF/layouts/errorTemplate.jsp">
+        <put-attribute name="controllSilder" value="/WEB-INF/layouts/sidemenu/controlSlider.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/layouts/footer/footer.jsp" />
+        <put-attribute name="slide" value="/WEB-INF/layouts/sidemenu/slide.jsp" />
+        <put-attribute name="header" value="/WEB-INF/layouts/header/header.jsp" />
+        <put-attribute name="style" value="/WEB-INF/layouts/style/defaultstyle.jsp" />
+        <put-attribute name="script" value="/WEB-INF/layouts/script/defaultscript.jsp" />
+    </definition>
+    
+</tiles-definitions>

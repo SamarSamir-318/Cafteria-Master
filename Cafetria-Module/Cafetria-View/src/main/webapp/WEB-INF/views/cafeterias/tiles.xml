@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+   
+    
+    <definition name="cafeterias/addCafetria" extends="formTemplate">
+        <put-attribute name="title" value="Add Cafetria" />
+        <put-attribute name="content" value="/WEB-INF/views/cafeterias/addCafetria.jsp" />
+    </definition>
+    <definition name="cafeterias/success" extends="formTemplate">
+        <put-attribute name="title" value="Successfully inserted" />
+        <put-attribute name="content" value="/WEB-INF/views/cafeterias/success.jsp" />
+    </definition>   
+    <definition name="cafeterias/showCafetrias" extends="formTemplate">
+        <put-attribute name="title" value="All Cafetrias" />
+        <put-attribute name="content" value="/WEB-INF/views/cafeterias/showCafetrias.jsp" />
+    </definition>   
+    <definition name="cafeterias/updateCafetria" extends="formTemplate">
+        <put-attribute name="title" value="Update Cafetria" />
+        <put-attribute name="content" value="/WEB-INF/views/cafeterias/updateCafetria.jsp" />
+    </definition>    
+</tiles-definitions>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+   
+    
+    <definition name="Categories/addCategory" extends="formTemplate">
+        <put-attribute name="title" value="Add Category" />
+        <put-attribute name="content" value="/WEB-INF/views/Categories/addCategory.jsp" />
+    </definition>
+    <definition name="Categories/success" extends="formTemplate">
+        <put-attribute name="title" value="Successfully inserted" />
+        <put-attribute name="content" value="/WEB-INF/views/Categories/success.jsp" />
+    </definition>   
+    <definition name="Categories/showCategories" extends="formTemplate">
+        <put-attribute name="title" value="All Categories" />
+        <put-attribute name="content" value="/WEB-INF/views/Categories/showCategories.jsp" />
+    </definition>   
+    <definition name="Categories/updateCategory" extends="formTemplate">
+        <put-attribute name="title" value="Update Category" />
+        <put-attribute name="content" value="/WEB-INF/views/Categories/updateCategory.jsp" />
+    </definition>    
+</tiles-definitions>

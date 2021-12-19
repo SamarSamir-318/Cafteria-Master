@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+   
+    <definition name="admin/login" extends="loginTemplate">
+        <put-attribute name="title" value="ITI Login" />
+        <put-attribute name="formContent" value="/WEB-INF/views/admin/login.jsp" />
+    </definition>
+    
+    <definition name="admin/form" extends="mainTemplate">
+        <put-attribute name="title" value="Form Template" />
+        <put-attribute name="content" value="/WEB-INF/views/admin/form.jsp" />
+    </definition>
+    
+    <definition name="admin/table" extends="mainTemplate">
+        <put-attribute name="title" value="Table Template" />
+        <put-attribute name="content" value="/WEB-INF/views/admin/table.jsp" />
+    </definition>
+    
+    <definition name="admin/error" extends="mainTemplate">
+        <put-attribute name="title" value="Error Template" />
+        <put-attribute name="content" value="/WEB-INF/views/admin/error.jsp" />
+    </definition>
+    
+    <definition name="admin/chart" extends="mainTemplate">
+        <put-attribute name="title" value="Chart Template" />
+        <put-attribute name="content" value="/WEB-INF/views/admin/chart.jsp" />
+    </definition>
+    
+</tiles-definitions>

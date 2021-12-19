@@ -1,0 +1,39 @@
+/* 
+    Created on : May 28, 2017, 3:12:02 PM
+    Author     : MotYim <mohamed.motyim@gmail.com>
+*/
+
+/********************* Cutome error ****************/
+.danger-error{
+    margin: 0px;
+    color : #FFF;
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+.danger-error p {
+    margin:  0px  ;
+}
+
+.danger-error:after,.danger-error:before{
+    border-right-color: #e74c3c;   
+}
+
+.badge{
+    text-align:center;
+}
+/********************* row order ****************/
+.row-order{
+    display: -webkit-flex !important;
+    display: flex !important;
+    -webkit-flex-direction: column !important;
+    flex-direction: column !important;
+}
+.order-contianer{
+    display: -webkit-flex !important;
+    display: flex !important;
+    -webkit-flex-direction: row !important;
+    flex-direction: row !important;
+}
+th {
+    text-align: -webkit-auto !important;
+}

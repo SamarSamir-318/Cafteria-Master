@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="error/error404" extends="errorTemplate">
+        <put-attribute name="title" value="Page not Found" />
+        <put-attribute name="content" value="/WEB-INF/views/error/404.jsp" />
+    </definition>
+    <definition name="error/error403" extends="errorTemplate">
+        <put-attribute name="title" value="UnAuthorized Access" />
+        <put-attribute name="content" value="/WEB-INF/views/error/403.jsp" />
+    </definition>
+    <definition name="error/error500" extends="errorTemplate">
+        <put-attribute name="title" value="Server Error" />
+        <put-attribute name="content" value="/WEB-INF/views/error/500.jsp" />
+    </definition>
+</tiles-definitions>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+   
+    
+    <definition name="rowMaterials/addRowMaterial" extends="formTemplate">
+        <put-attribute name="title" value="Add RowMaterial" />
+        <put-attribute name="content" value="/WEB-INF/views/rowMaterials/addRowMaterial.jsp" />
+    </definition>     
+    <definition name="rowMaterials/addRowMaterial2" extends="formTemplate">
+        <put-attribute name="title" value="Successfully inserted" />
+        <put-attribute name="content" value="/WEB-INF/views/rowMaterials/addRowMaterial2.jsp" />
+    </definition>  
+    <definition name="rowMaterials/success" extends="formTemplate">
+        <put-attribute name="title" value="Successfully inserted" />
+        <put-attribute name="content" value="/WEB-INF/views/rowMaterials/success.jsp" />
+    </definition>   
+    <definition name="rowMaterials/showRowMaterials" extends="formTemplate">
+        <put-attribute name="title" value="Successfully inserted" />
+        <put-attribute name="content" value="/WEB-INF/views/rowMaterials/showRowMaterials.jsp" />
+    </definition>   
+    <definition name="rowMaterials/updateRowMaterial" extends="formTemplate">
+        <put-attribute name="title" value="Successfully inserted" />
+        <put-attribute name="content" value="/WEB-INF/views/rowMaterials/updateRowMaterial.jsp" />
+    </definition>   
+    <definition name="rowMaterials/updateRowMaterial2" extends="formTemplate">
+        <put-attribute name="title" value="Successfully inserted" />
+        <put-attribute name="content" value="/WEB-INF/views/rowMaterials/updateRowMaterial2.jsp" />
+    </definition>
+</tiles-definitions>

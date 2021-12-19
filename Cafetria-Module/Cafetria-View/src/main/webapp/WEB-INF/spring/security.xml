@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
+			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xmlns="http://www.springframework.org/schema/security"
+			 xmlns:p="http://www.springframework.org/schema/p"
+			 xmlns:context="http://www.springframework.org/schema/context"
+			 xmlns:tx="http://www.springframework.org/schema/tx"
+			 xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+			 xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-4.0.xsd
+            http://www.springframework.org/schema/security
+            http://www.springframework.org/schema/security/spring-security-4.0.xsd
+            http://www.springframework.org/schema/tx
+            http://www.springframework.org/schema/tx/spring-tx.xsd
+            http://www.springframework.org/schema/data/jpa
+            http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+
+    <!-- enable use-expressions -->
+    <http auto-config="true" use-expressions="true">
+        <intercept-url pattern="/addRole" access="hasAuthority('INSERT_ROLE')" />
+        <intercept-url pattern="/addCafetria" access="hasAuthority('INSERT_CAFETRIA')" />
+        <intercept-url pattern="/showCafetrias" access="hasAuthority('SHOW_CAFETRIAS')" />
+        <intercept-url pattern="/deleteCafetria" access="hasAuthority('DELETE_CAFETRIA')" />
+        <intercept-url pattern="/updateCafetria" access="hasAuthority('UPDATE_CAFETRIA')" />
+        <intercept-url pattern="/updateCafetria" access="hasAuthority('UPDATE_CAFETRIA')" />
+        <intercept-url pattern="/addCategory" access="hasAuthority('INSERT_CATEGORY')" /> 
+        <intercept-url pattern="/addCategory" access="hasAuthority('INSERT_CATEGORY')" /> 
+        <intercept-url pattern="/showCategories" access="hasAuthority('SHOW_CATEGORIES')" />
+        <intercept-url pattern="/deleteCategory" access="hasAuthority('DELETE_CATEGORY')" /> 
+            
+        <intercept-url pattern="/updateCategory" access="hasAuthority('UPDATE_CATEGORY')" />
+        <intercept-url pattern="/updateCategory" access="hasAuthority('UPDATE_CATEGORY')" /> 
+        <intercept-url pattern="/addCustomer" access="hasAuthority('INSERT_CUSTOMER')" />
+        <intercept-url pattern="/addCustomer" access="hasAuthority('INSERT_CUSTOMER')" />   
+        <intercept-url pattern="/addCustomer" access="hasAuthority('INSERT_CUSTOMER')" />     
+        <intercept-url pattern="/showallcustomers" access="hasAuthority('SHOW_ALL_CUSTOMERS')" />
+        <intercept-url pattern="/showSelectedCustomer" access="hasAuthority('SHOW_ALL_CUSTOMERS')" /> 
+        <intercept-url pattern="/showSelectedCustomer" access="hasAuthority('SHOW_ALL_CUSTOMERS')" />  
+        <intercept-url pattern="/deleteCustomer" access="hasAuthority('DELETE_CUSTOMER')" />
+        <intercept-url pattern="/addItem" access="hasAuthority('INSERT_ITEM')" /> 
+        <intercept-url pattern="/addItem" access="hasAuthority('INSERT_ITEM')" />
+        
+        <intercept-url pattern="/showItem" access="hasAuthority('SHOW_ITEM')" />
+        <intercept-url pattern="/deleteItem" access="hasAuthority('DELETE_ITEM')" /> 
+        <intercept-url pattern="/updateItem" access="hasAuthority('UPDATE_ITEM')" />    
+        <intercept-url pattern="/updateItem" access="hasAuthority('UPDATE_ITEM')" />
+        <intercept-url pattern="/homeItem" access="hasAuthority('USER_DISPLAY_ITEM')" /> 
+        <intercept-url pattern="/addOffer" access="hasAuthority('INSERT_OFFER')" /> 
+        <intercept-url pattern="/addOffer" access="hasAuthority('INSERT_OFFER')" />        
+        <intercept-url pattern="/showOffer" access="hasAuthority('SHOW_OFFER')" /> 
+        <intercept-url pattern="/deleteOffer" access="hasAuthority('DELETE_OFFER')" />       
+        <intercept-url pattern="/updateOffer" access="hasAuthority('UPDATE_OFFER')" />
+        
+        <intercept-url pattern="/updateOffer" access="hasAuthority('UPDATE_OFFER')" />
+        <intercept-url pattern="/homeOffer" access="hasAuthority('USER_DISPLAY_OFFER')" /> 
+        <intercept-url pattern="/addOrder" access="hasAuthority('INSERT_ORDER')" /> 
+        <intercept-url pattern="/addOrder" access="hasAuthority('INSERT_ORDER')" />
+        <intercept-url pattern="/showOrders" access="hasAuthority('SHOW_ORDERS')" /> 
+        <intercept-url pattern="/showAllOrders" access="hasAuthority('SHOW_ALL_ORDERS')" /> 
+        <intercept-url pattern="/deleteOrder" access="hasAuthority('DELETE_ORDER')" />       
+        <intercept-url pattern="/updateOrder" access="hasAuthority('UPDATE_ORDER')" /> 
+        <intercept-url pattern="/updateOrder" access="hasAuthority('UPDATE_ORDER')" /> 
+        <intercept-url pattern="/showOrderItems" access="hasAuthority('SHOW_ORDER_ITEMS')" />
+        
+        <intercept-url pattern="/selectItems" access="hasAuthority('SELECT_ITEMS')" />
+        <intercept-url pattern="/addItemToOrder" access="hasAuthority('INSERT_ITEM_TO_ORDER')" /> 
+        <intercept-url pattern="/addRowMaterial" access="hasAuthority('INSERT_ROW_MATERIAL')" /> 
+        <intercept-url pattern="/addRowMaterial" access="hasAuthority('INSERT_ROW_MATERIAL')" /> 
+        <intercept-url pattern="/showRowMaterials" access="hasAuthority('SHOW_ROW_MATERIALS')" /> 
+        <intercept-url pattern="/deleteRowMaterial" access="hasAuthority('DELETE_ROW_MATERIAL')" />
+        <intercept-url pattern="/updateRowMaterial" access="hasAuthority('UPDATE_ROW_MATERIAL')" /> 
+        <intercept-url pattern="/updateRowMaterial" access="hasAuthority('UPDATE_ROW_MATERIAL')" />        
+        <intercept-url pattern="/addStock" access="hasAuthority('INSERT_STOCK')" /> 
+        <intercept-url pattern="/addStock" access="hasAuthority('INSERT_STOCK')" />  
+        <intercept-url pattern="/showStocks" access="hasAuthority('SHOW_STOCKS')" />
+        <intercept-url pattern="/deleteStock" access="hasAuthority('DELETE_STOCK')" /> 
+        <intercept-url pattern="/updateStock" access="hasAuthority('UPDATE_STOCK')" /> 
+        <intercept-url pattern="/updateStock" access="hasAuthority('UPDATE_STOCK')" /> 
+        <intercept-url pattern="/addWorker" access="hasAuthority('INSERT_WORKER')" /> 
+        <intercept-url pattern="/addWorker" access="hasAuthority('INSERT_WORKER')" /> 
+        <intercept-url pattern="/showallworkers" access="hasAuthority('SHOW_ALL_WORKERS')" /> 
+        <intercept-url pattern="/showSelectedWorker" access="hasAuthority('SHOW_SELECTED_WORKER')" />        
+        <intercept-url pattern="/deleteWorker" access="hasAuthority('DELETE_WORKER')" /> 
+        <intercept-url pattern="/showSelectedWorker" access="hasAuthority('SHOW_SELECTED_WORKER')" />  
+    
+        <!-- access denied page -->
+
+        <!--<access-denied-handler error-page="/403" />-->
+		<form-login 
+			login-processing-url="/j_spring_security_check"
+			login-page="/login"
+			default-target-url="/welcome"
+			always-use-default-target="true"
+			authentication-failure-url="/login?error" 
+			username-parameter="username"
+			password-parameter="password" />
+		<!--logout options--> 
+		<logout logout-url="/login?logout" logout-success-url="/login?logout" delete-cookies="JSESSIONID"/>
+		<!--enable csrf protection--> 
+		<csrf disabled="true" />
+		<session-management>
+			<concurrency-control max-sessions="24" error-if-maximum-exceeded="true" />
+		</session-management>
+	</http>
+	<beans:bean id="myUserDetailsService" class="eg.gov.iti.cafetria.security.CustomUserDetailsService">
+		<beans:property name="serviceURL" value="http://localhost:8085/Backend%20View/getPassword" />
+	</beans:bean>
+	<authentication-manager>
+		<authentication-provider user-service-ref="myUserDetailsService">
+			<password-encoder hash="bcrypt"/>
+		</authentication-provider>
+	</authentication-manager>
+
+
+</beans:beans>

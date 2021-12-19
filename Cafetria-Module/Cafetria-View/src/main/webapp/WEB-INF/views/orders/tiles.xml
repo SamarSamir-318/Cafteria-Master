@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+   
+    
+    <definition name="admin/orders/addOrder" extends="formTemplate">
+        <put-attribute name="title" value="Add Order" />
+        <put-attribute name="content" value="/WEB-INF/views/orders/addOrder.jsp" />
+    </definition>
+    <definition name="admin/orders/success" extends="formTemplate">
+        <put-attribute name="title" value="Successfully inserted" />
+        <put-attribute name="content" value="/WEB-INF/views/orders/success.jsp" />
+    </definition>   
+    
+    <definition name="admin/orders/updateOrder" extends="formTemplate">
+        <put-attribute name="title" value="Edit Order" />
+        <put-attribute name="content" value="/WEB-INF/views/orders/updateOrder.jsp" />
+    </definition> 
+    <definition name="admin/orders/showAllOrders" extends="orderTemplate">
+        <put-attribute name="title" value="Show Orders" />
+        <put-attribute name="content" value="/WEB-INF/views/orders/ShowAllOrders2.jsp" />
+    </definition>
+    <definition name="admin/orders/selectItems" extends="mainTemplate">
+        <put-attribute name="title" value="Select Items" />
+        <put-attribute name="content" value="/WEB-INF/views/orders/selectItems.jsp" />
+    </definition>
+    <definition name="admin/orders/selectOffers" extends="mainTemplate">
+        <put-attribute name="title" value="Select Offers" />
+        <put-attribute name="content" value="/WEB-INF/views/orders/selectOffers.jsp" />
+    </definition>
+    
+    
+    <definition name="orders/selectItems" extends="mainViewClientTemplate">
+        <put-attribute name="title" value="Select Items" />
+        <put-attribute name="content" value="/WEB-INF/views/orders/selectItems.jsp" />
+    </definition>
+    <definition name="orders/selectOffers" extends="mainViewClientTemplate">
+        <put-attribute name="title" value="Select Offers" />
+        <put-attribute name="content" value="/WEB-INF/views/orders/selectOffers.jsp" />
+    </definition>
+
+
+ <definition name="orders/addOrder" extends="mainViewClientTemplate">
+        <put-attribute name="title" value="Add Order" />
+        <put-attribute name="content" value="/WEB-INF/views/orders/addOrder.jsp" />
+    </definition>
+    <definition name="orders/success" extends="mainViewClientTemplate">
+        <put-attribute name="title" value="Successfully inserted" />
+        <put-attribute name="content" value="/WEB-INF/views/orders/success.jsp" />
+    </definition>  
+    
+
+</tiles-definitions> 

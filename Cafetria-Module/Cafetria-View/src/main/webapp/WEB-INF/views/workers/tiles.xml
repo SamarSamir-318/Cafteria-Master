@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+   
+    
+<!--    <definition name="workers/AddWorker" extends="formTemplate">
+        <put-attribute name="title" value="Add Worker" />
+        <put-attribute name="content" value="/WEB-INF/views/workers/AddWorker.jsp" />
+    </definition>-->
+    <definition name="workers/success" extends="mainTemplate">
+        <put-attribute name="title" value="Success" />
+        <put-attribute name="content" value="/WEB-INF/views/workers/success.jsp" />
+    </definition>   
+    <definition name="workers/showworkers" extends="mainTemplate">
+        <put-attribute name="title" value="Show Workers" />
+        <put-attribute name="content" value="/WEB-INF/views/workers/showworkers.jsp" />
+    </definition>   
+    <definition name="workers/updateWorker" extends="formTemplate">
+        <put-attribute name="title" value="Update Worker" />
+        <put-attribute name="content" value="/WEB-INF/views/workers/updateWorker.jsp" />
+    </definition>    
+</tiles-definitions>

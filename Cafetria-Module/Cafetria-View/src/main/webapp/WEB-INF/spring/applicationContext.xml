@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-4.0.xsd
+            http://www.springframework.org/schema/security
+            http://www.springframework.org/schema/security/spring-security-4.0.xsd
+            http://www.springframework.org/schema/tx
+            http://www.springframework.org/schema/tx/spring-tx.xsd
+            http://www.springframework.org/schema/data/jpa
+            http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
+    <!-- ======================================================== -->
+    <!--              Enable Context Annotation Based             -->
+    <!-- ======================================================== -->
+    <context:annotation-config />
+    <!-- ======================================================== -->
+    <!--       Import Service & Remote Service XML Resources      -->
+    <!-- ======================================================== -->
+    <import resource="classpath:eg/gov/iti/cafetria/service/cfg/ServiceConfig.xml"/>
+    <import resource="classpath:eg/gov/iti/cafetria/remote/service/cfg/ServiceConfig.xml"/>
+    <!-- ======================================================== -->
+    <!--                  Import Web XML Resources                -->
+    <!-- ======================================================== -->
+    <import resource="mvc.xml"/>
+    <import resource="security.xml"/>
+    <import resource="localation.xml"/>
+    <import resource="uploadImage.xml"/>
+    <!-- ======================================================== -->
+    <!--           Scan project packages root directories         -->
+    <!-- ======================================================== -->
+    <context:component-scan base-package="eg.gov.iti.cafetria.view"/>
+  
+</beans>

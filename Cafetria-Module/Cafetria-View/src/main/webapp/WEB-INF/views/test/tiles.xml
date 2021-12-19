@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+   
+    <definition name="test/order" extends="orderTemplate">
+        <put-attribute name="title" value="new order" />
+        <put-attribute name="content" value="/WEB-INF/views/test/order.jsp" />
+    </definition> 
+    
+    <definition name="test/view" extends="mainViewClientTemplate">
+        <put-attribute name="title" value="new view" />
+        <put-attribute name="content" value="/WEB-INF/views/test/view.jsp" />
+    </definition> 
+    
+    <definition name="test/test" extends="abstractTemplate">
+        <put-attribute name="title" value="Successfully inserted" />
+        <put-attribute name="content" value="hello" />
+    </definition>
+    
+    <definition name="test/horder" extends="orderHistoryTemplate">
+        <put-attribute name="title" value="Successfully inserted" />
+        <put-attribute name="content" value="/WEB-INF/views/test/order.jsp" />
+    </definition>   
+    
+    <definition name="test/buy" extends="abstractTemplate">
+        <put-attribute name="title" value="Successfully inserted" />
+        <put-attribute name="content" value="/WEB-INF/views/test/buy.jsp" />
+    </definition>     
+</tiles-definitions>

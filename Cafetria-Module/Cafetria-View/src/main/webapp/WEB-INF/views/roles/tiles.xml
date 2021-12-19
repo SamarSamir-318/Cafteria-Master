@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+   
+    <definition name="roles/AddRole" extends="formTemplate">
+        <put-attribute name="title" value="Add Role" />
+        <put-attribute name="content" value="/WEB-INF/views/roles/AddRole.jsp" />
+    </definition>
+    <definition name="roles/showroles" extends="mainTemplate">
+        <put-attribute name="title" value="Show Roles" />
+        <put-attribute name="content" value="/WEB-INF/views/roles/showroles.jsp" />
+    </definition>   
+    <definition name="roles/updateRole" extends="formTemplate">
+        <put-attribute name="title" value="Update Role" />
+        <put-attribute name="content" value="/WEB-INF/views/roles/updateRole.jsp" />
+    </definition>    
+</tiles-definitions>

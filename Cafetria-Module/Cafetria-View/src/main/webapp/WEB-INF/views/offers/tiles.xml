@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+   
+    
+    <definition name="offers/addOffer" extends="formTemplate">
+        <put-attribute name="title" value="Add Offer" />
+        <put-attribute name="content" value="/WEB-INF/views/offers/addOffer.jsp" />
+    </definition>
+        <definition name="offers/success" extends="formTemplate">
+        <put-attribute name="title" value="Successfully inserted" />
+        <put-attribute name="content" value="/WEB-INF/views/offers/success.jsp" />
+    </definition>   
+    <definition name="offers/showAdminOffer" extends="formTemplate">
+        <put-attribute name="title" value="Successfully inserted" />
+        <put-attribute name="content" value="/WEB-INF/views/offers/showOffer.jsp" />
+    </definition>   
+    <definition name="offers/updateOffer" extends="formTemplate">
+        <put-attribute name="title" value="Edit Order" />
+        <put-attribute name="content" value="/WEB-INF/views/offers/updateOffer.jsp" />
+    </definition> 
+      <definition name="offers/homeOffer" extends="formTemplate">
+        <put-attribute name="title" value="Edit Order" />
+        <put-attribute name="content" value="/WEB-INF/views/offers/homeOffer.jsp" />
+    </definition> 
+    
+          <definition name="offers/showCustomerOffer" extends="mainViewClientTemplate">
+        <put-attribute name="title" value="New Offers" />
+        <put-attribute name="content" value="/WEB-INF/views/offers/showNewOffers.jsp" />
+    </definition>      
+</tiles-definitions>

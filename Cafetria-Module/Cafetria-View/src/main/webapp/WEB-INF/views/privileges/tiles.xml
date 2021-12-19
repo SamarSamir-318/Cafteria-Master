@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+   
+    
+    <definition name="privileges/addPrivilege" extends="formTemplate">
+        <put-attribute name="title" value="Add Privilege" />
+        <put-attribute name="content" value="/WEB-INF/views/privileges/addPrivilege.jsp" />
+    </definition>
+    <definition name="privileges/showPrivileges" extends="formTemplate">
+        <put-attribute name="title" value="All Privileges" />
+        <put-attribute name="content" value="/WEB-INF/views/privileges/showPrivileges.jsp" />
+    </definition>   
+    <definition name="privileges/updatePrivilege" extends="formTemplate">
+        <put-attribute name="title" value="Update Privilege" />
+        <put-attribute name="content" value="/WEB-INF/views/privileges/updatePrivilege.jsp" />
+    </definition>    
+</tiles-definitions>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>    
+    
+    <definition name="items/addItem" extends="formTemplate">
+        <put-attribute name="title" value="Add Item" />
+        <put-attribute name="content" value="/WEB-INF/views/items/addItem.jsp" />
+    </definition>
+    <definition name="items/success" extends="formTemplate">
+        <put-attribute name="title" value="Successfully inserted" />
+        <put-attribute name="content" value="/WEB-INF/views/items/success.jsp" />
+    </definition>   
+    <definition name="items/showItem" extends="formTemplate">
+        <put-attribute name="title" value="All Items" />
+        <put-attribute name="content" value="/WEB-INF/views/items/showItem.jsp" />
+    </definition>   
+    <definition name="items/updateItem" extends="formTemplate">
+        <put-attribute name="title" value="Edit Item" />
+        <put-attribute name="content" value="/WEB-INF/views/items/updateItem.jsp" />
+    </definition> 
+    <definition name="items/homeItem" extends="formTemplate">
+        <put-attribute name="title" value="Add Item" />
+        <put-attribute name="content" value="/WEB-INF/views/items/homeItem.jsp" />
+    </definition> 
+    
+    <definition name="items/uploadform" extends="formTemplate">
+        <put-attribute name="title" value="upload image" />
+        <put-attribute name="content" value="/WEB-INF/views/items/uploadform.jsp" />
+    </definition>     
+    
+    <definition name="items/selectFavItems" extends="mainViewClientTemplate">
+        <put-attribute name="title" value="Select Favorite Items" />
+        <put-attribute name="content" value="/WEB-INF/views/items/selectFavItems.jsp" />
+    </definition>
+    
+    <definition name="items/showFavItems" extends="mainViewClientTemplate">
+        <put-attribute name="title" value="Favorite Items" />
+        <put-attribute name="content" value="/WEB-INF/views/items/showFavItems.jsp" />
+    </definition>     
+  
+  
+  
+  
+</tiles-definitions>
